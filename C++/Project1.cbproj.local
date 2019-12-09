@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2019/12/09 14:11:50.721,=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
-    <Transaction>2019/12/09 14:11:50.736,=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
-    <Transaction>2019/12/09 14:11:59.790,=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit2.cpp</Transaction>
-    <Transaction>2019/12/09 14:12:41.581,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\K8055.cpp=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit2.cpp</Transaction>
-    <Transaction>2019/12/09 14:12:41.581,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\K8055.h=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit2.h</Transaction>
-    <Transaction>2019/12/09 14:12:49.376,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\IHM.h=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit1.h</Transaction>
-    <Transaction>2019/12/09 14:12:49.376,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\IHM.dfm=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit1.dfm</Transaction>
-    <Transaction>2019/12/09 14:12:49.376,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\IHM.cpp=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
-    <Transaction>2019/12/09 14:14:33.463,C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\K8055.cpp=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\K8055.cpp</Transaction>
-    <Transaction>2019/12/09 14:14:33.463,C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\K8055.h=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\K8055.h</Transaction>
-    <Transaction>2019/12/09 14:14:49.778,C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\IHM.h=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\IHM.h</Transaction>
-    <Transaction>2019/12/09 14:14:49.778,C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\IHM.cpp=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\IHM.cpp</Transaction>
-    <Transaction>2019/12/09 14:14:49.778,C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\IHM.dfm=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\IHM.dfm</Transaction>
-    <Transaction>2019/12/09 14:14:59.540,C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\Project1PCH1.h=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
-    <Transaction>2019/12/09 14:15:01.439,C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\Project1.cbproj=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Project1.cbproj</Transaction>
-    <Transaction>2019/12/09 14:16:20.944,=C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\Include\K8055D.h</Transaction>
-    <Transaction>2019/12/09 14:16:35.826,=C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\Include\k8055d.lib</Transaction>
+	<Transactions>
+    <Transaction>2019/12/09 14:11:50.000.721,=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2019/12/09 14:11:50.000.736,=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2019/12/09 14:11:59.000.790,=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit2.cpp</Transaction>
+    <Transaction>2019/12/09 14:12:41.000.581,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit2.h=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\K8055.h</Transaction>
+    <Transaction>2019/12/09 14:12:41.000.581,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit2.cpp=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\K8055.cpp</Transaction>
+    <Transaction>2019/12/09 14:12:49.000.376,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit1.h=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\IHM.h</Transaction>
+    <Transaction>2019/12/09 14:12:49.000.376,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit1.dfm=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\IHM.dfm</Transaction>
+    <Transaction>2019/12/09 14:12:49.000.376,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Unit1.cpp=C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\IHM.cpp</Transaction>
+    <Transaction>2019/12/09 14:14:33.000.463,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\K8055.cpp=C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\K8055.cpp</Transaction>
+    <Transaction>2019/12/09 14:14:33.000.463,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\K8055.h=C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\K8055.h</Transaction>
+    <Transaction>2019/12/09 14:14:49.000.778,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\IHM.dfm=C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\IHM.dfm</Transaction>
+    <Transaction>2019/12/09 14:14:49.000.778,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\IHM.cpp=C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\IHM.cpp</Transaction>
+    <Transaction>2019/12/09 14:14:49.000.778,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\IHM.h=C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\IHM.h</Transaction>
+    <Transaction>2019/12/09 14:14:59.000.540,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Project1PCH1.h=C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\Project1PCH1.h</Transaction>
+    <Transaction>2019/12/09 14:15:01.000.439,C:\Users\Le Oui\Documents\Embarcadero\Studio\Projets\Project1.cbproj=C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\Project1.cbproj</Transaction>
+    <Transaction>2019/12/09 14:16:20.000.944,=C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\Include\K8055D.h</Transaction>
+    <Transaction>2019/12/09 14:16:35.000.826,=C:\Users\Le Oui\Documents\GitHub\TpSystem_MiniStation\C++\Include\k8055d.lib</Transaction>
   </Transactions>
 </BorlandProject>

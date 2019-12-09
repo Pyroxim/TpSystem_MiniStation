@@ -26,8 +26,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 304
-    Top = 112
+    Left = 280
+    Top = 73
     Width = 23
     Height = 17
     Caption = '- - -'
@@ -73,6 +73,7 @@ object Form1: TForm1
   end
   object Timer1: TTimer
     Enabled = False
+    Interval = 5000
     OnTimer = Timer1Timer
     Left = 616
   end
