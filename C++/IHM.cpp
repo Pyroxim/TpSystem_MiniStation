@@ -58,7 +58,8 @@ void __fastcall TForm1::Timer1Timer(TObject *Sender)
 	if(mySQL != NULL)
 	{
 		str << "INSERT INTO `donnee_minimeteo` (`ID_temperature`, `Temperature`) VALUES ('', "<< temp <<")";
-        mysql_query(mySQL, str.str().c_str());
+		mysql_query(mySQL, str.str().c_str());
+        str.str(std::string());
     }
 }
 //---------------------------------------------------------------------------
