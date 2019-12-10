@@ -3,4 +3,17 @@
 #ifndef K8055H
 #define K8055H
 //---------------------------------------------------------------------------
+class K8055
+{
+	private :
+		int CardAddr;
+		float data;
+	public :
+		K8055();
+		~K8055();
+		bool Connexion(int addr);
+		float Lecture(int addr);
+
+};
+//---------------------------------------------------------------------------
 #endif
