@@ -17,23 +17,10 @@ object Form1: TForm1
     Left = 32
     Top = 112
     Width = 4
-    Height = 17
+    Height = 16
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -14
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object Label2: TLabel
-    Left = 280
-    Top = 73
-    Width = 23
-    Height = 17
-    Caption = '- - -'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -14
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
@@ -70,6 +57,15 @@ object Form1: TForm1
     Caption = 'Connexion'
     TabOrder = 3
     OnClick = Button1Click
+  end
+  object Memo1: TMemo
+    Left = 176
+    Top = 16
+    Width = 185
+    Height = 112
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 4
   end
   object Timer1: TTimer
     Enabled = False

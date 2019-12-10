@@ -22,7 +22,7 @@ __published:	// Composants gérés par l'EDI
 	TButton *Button1;
 	TLabel *Label1;
 	TTimer *Timer1;
-	TLabel *Label2;
+	TMemo *Memo1;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Timer1Timer(TObject *Sender);
 private:	// Déclarations utilisateur

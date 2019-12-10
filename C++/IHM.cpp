@@ -27,6 +27,8 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 		CheckBoxSK6->Enabled = false;
         Button1->Enabled = false;
 		Timer1->Enabled = true;
+        Memo1->Visible = true;
+		Memo1->Text = "- - -";
 	}
 	else
 	{
@@ -39,7 +41,11 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 void __fastcall TForm1::Timer1Timer(TObject *Sender)
 {
 	tension = velman.Lecture(carteAdr);
-    Label2->Caption = "Tension : " + FloatToStr(tension);
+	Memo1->Text = "Tension : " + FloatToStr(tension);
 }
 //---------------------------------------------------------------------------
+
+
+
+
 
