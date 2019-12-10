@@ -32,6 +32,6 @@ bool K8055::Connexion(int addr)
 float K8055::Lecture(int addr)
 {
 	data = ReadAnalogChannel(2);
-    data = (data / 255) * 5;
+	data = (data / 255) * 5;
     return data;
 }

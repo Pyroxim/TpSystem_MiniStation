@@ -15,7 +15,7 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 {
 	mySQL = mysql_init(NULL);
 
-	mySQL = mysql_real_connect(mySQL, "192.168.64.130", "applicpp", "applicpp", "TPMeteo", 0, NULL, 0);
+	mySQL = mysql_real_connect(mySQL, "192.168.64.73", "applicpp", "applicpp", "TPMeteo", 0, NULL, 0);
 	if(mySQL == NULL)
 	{
 		Label2->Caption = "Connexion BDD échouée.";
@@ -52,12 +52,12 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 void __fastcall TForm1::Timer1Timer(TObject *Sender)
 {
 	tension = velman.Lecture(carteAdr);
-    temp = (tension * 7) - 35;
+	temp = tension * 18 - 30;
 	Memo1->Text = "Température : " + FloatToStr(temp);
 
 	if(mySQL != NULL)
 	{
-		str << "INSERT into `donnee_minimeteo` (`Temperature`) VALUES ("<< temp <<")";
+		str << "INSERT INTO `donnee_minimeteo` (`ID_temperature`, `Temperature`) VALUES ('', "<< temp <<")";
         mysql_query(mySQL, str.str().c_str());
     }
 }
