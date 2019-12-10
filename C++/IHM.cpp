@@ -1,6 +1,7 @@
 //---------------------------------------------------------------------------
 
 #include <vcl.h>
+#include <sstream>
 #pragma hdrstop
 
 #include "IHM.h"
@@ -12,7 +13,17 @@ TForm1 *Form1;
 __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner)
 {
+	mySQL = mysql_init(NULL);
 
+	mySQL = mysql_real_connect(mySQL, "192.168.64.130", "applicpp", "applicpp", "TPMeteo", 0, NULL, 0);
+	if(mySQL == NULL)
+	{
+		Label2->Caption = "Connexion BDD échouée.";
+	}
+	else
+	{
+        Label2->Caption = "Connexion BDD réussie.";
+	}
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Button1Click(TObject *Sender)
@@ -41,7 +52,14 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 void __fastcall TForm1::Timer1Timer(TObject *Sender)
 {
 	tension = velman.Lecture(carteAdr);
-	Memo1->Text = "Tension : " + FloatToStr(tension);
+    temp = (tension * 7) - 35;
+	Memo1->Text = "Température : " + FloatToStr(temp);
+
+	if(mySQL != NULL)
+	{
+		str << "INSERT into `donnee_minimeteo` (`Temperature`) VALUES ("<< temp <<")";
+        mysql_query(mySQL, str.str().c_str());
+    }
 }
 //---------------------------------------------------------------------------
 

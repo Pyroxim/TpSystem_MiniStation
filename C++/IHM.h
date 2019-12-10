@@ -7,8 +7,11 @@
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <sstream>
 
 #include "Include/K8055D.h"
+#include "Include/mysql.h"
 #include "K8055.h"
 
 #include <Vcl.ExtCtrls.hpp>
@@ -23,6 +26,7 @@ __published:	// Composants gérés par l'EDI
 	TLabel *Label1;
 	TTimer *Timer1;
 	TMemo *Memo1;
+	TLabel *Label2;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Timer1Timer(TObject *Sender);
 private:	// Déclarations utilisateur
@@ -30,6 +34,10 @@ private:	// Déclarations utilisateur
 	int carteAdr;
 	bool cSuccess;
 	float tension;
+	float temp;
+
+	MYSQL *mySQL;
+	std::stringstream str;
 public:		// Déclarations utilisateur
 	__fastcall TForm1(TComponent* Owner);
 };

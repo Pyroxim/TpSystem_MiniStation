@@ -25,6 +25,18 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
   end
+  object Label2: TLabel
+    Left = 32
+    Top = 134
+    Width = 4
+    Height = 16
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object RadioGroup1: TRadioGroup
     Left = 32
     Top = 16
@@ -66,6 +78,7 @@ object Form1: TForm1
     Lines.Strings = (
       'Memo1')
     TabOrder = 4
+    Visible = False
   end
   object Timer1: TTimer
     Enabled = False

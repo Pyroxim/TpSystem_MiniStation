@@ -49,12 +49,12 @@
         <AllPackageLibs>rtl.lib;vcl.lib</AllPackageLibs>
         <Multithreaded>true</Multithreaded>
         <ProjectType>CppVCLApplication</ProjectType>
-        <ILINK_LibraryPath>Include\;..\..\..\GitHub\TpSystem_MiniStation\C++\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <ILINK_LibraryPath>Include\mysql\psi\;Include\mysql\;Include\;..\..\..\GitHub\TpSystem_MiniStation\C++\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
         <_TCHARMapping>wchar_t</_TCHARMapping>
         <SanitizedProjectName>Project1</SanitizedProjectName>
         <Icon_MainIcon>$(BDS)\bin\cbuilder_PROJECTICON.ico</Icon_MainIcon>
-        <IncludePath>Include\;..\..\..\GitHub\TpSystem_MiniStation\C++\;$(IncludePath)</IncludePath>
+        <IncludePath>Include\mysql\psi\;Include\mysql\;Include\;..\..\..\GitHub\TpSystem_MiniStation\C++\;$(IncludePath)</IncludePath>
         <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
         <DynamicRTL>true</DynamicRTL>
         <UsePackages>true</UsePackages>
@@ -119,6 +119,24 @@
             <DependentOn>IHM.h</DependentOn>
             <BuildOrder>2</BuildOrder>
         </CppCompile>
+        <None Include="Include\big_endian.h">
+            <BuildOrder>48</BuildOrder>
+        </None>
+        <None Include="Include\byte_order_generic.h">
+            <BuildOrder>47</BuildOrder>
+        </None>
+        <None Include="Include\byte_order_generic_x86.h">
+            <BuildOrder>46</BuildOrder>
+        </None>
+        <None Include="Include\byte_order_generic_x86_64.h">
+            <BuildOrder>45</BuildOrder>
+        </None>
+        <None Include="Include\decimal.h">
+            <BuildOrder>44</BuildOrder>
+        </None>
+        <None Include="Include\errmsg.h">
+            <BuildOrder>43</BuildOrder>
+        </None>
         <None Include="Include\K8055D.h">
             <BuildOrder>4</BuildOrder>
         </None>
@@ -126,6 +144,200 @@
             <BuildOrder>5</BuildOrder>
             <IgnorePath>true</IgnorePath>
         </LibFiles>
+        <None Include="Include\keycache.h">
+            <BuildOrder>42</BuildOrder>
+        </None>
+        <LibFiles Include="Include\libmysql.lib" Condition="'$(Platform)'=='Win32'">
+            <BuildOrder>6</BuildOrder>
+            <IgnorePath>true</IgnorePath>
+        </LibFiles>
+        <None Include="Include\little_endian.h">
+            <BuildOrder>41</BuildOrder>
+        </None>
+        <None Include="Include\mysql.h">
+            <BuildOrder>24</BuildOrder>
+        </None>
+        <None Include="Include\mysqld_ername.h">
+            <BuildOrder>18</BuildOrder>
+        </None>
+        <None Include="Include\mysqld_error.h">
+            <BuildOrder>17</BuildOrder>
+        </None>
+        <None Include="Include\mysql\client_authentication.h">
+            <BuildOrder>70</BuildOrder>
+        </None>
+        <None Include="Include\mysql\client_plugin.h">
+            <BuildOrder>69</BuildOrder>
+        </None>
+        <None Include="Include\mysql\client_plugin.h.pp"/>
+        <None Include="Include\mysql\get_password.h">
+            <BuildOrder>67</BuildOrder>
+        </None>
+        <None Include="Include\mysql\innodb_priv.h">
+            <BuildOrder>66</BuildOrder>
+        </None>
+        <None Include="Include\mysql\plugin.h">
+            <BuildOrder>65</BuildOrder>
+        </None>
+        <None Include="Include\mysql\plugin_audit.h">
+            <BuildOrder>64</BuildOrder>
+        </None>
+        <None Include="Include\mysql\plugin_audit.h.pp"/>
+        <None Include="Include\mysql\plugin_auth.h">
+            <BuildOrder>62</BuildOrder>
+        </None>
+        <None Include="Include\mysql\plugin_auth.h.pp"/>
+        <None Include="Include\mysql\plugin_auth_common.h">
+            <BuildOrder>60</BuildOrder>
+        </None>
+        <None Include="Include\mysql\plugin_ftparser.h">
+            <BuildOrder>59</BuildOrder>
+        </None>
+        <None Include="Include\mysql\plugin_ftparser.h.pp"/>
+        <None Include="Include\mysql\plugin_validate_password.h">
+            <BuildOrder>57</BuildOrder>
+        </None>
+        <None Include="Include\mysql\psi\mysql_file.h">
+            <BuildOrder>78</BuildOrder>
+        </None>
+        <None Include="Include\mysql\psi\mysql_idle.h">
+            <BuildOrder>77</BuildOrder>
+        </None>
+        <None Include="Include\mysql\psi\mysql_socket.h">
+            <BuildOrder>76</BuildOrder>
+        </None>
+        <None Include="Include\mysql\psi\mysql_stage.h">
+            <BuildOrder>75</BuildOrder>
+        </None>
+        <None Include="Include\mysql\psi\mysql_statement.h">
+            <BuildOrder>74</BuildOrder>
+        </None>
+        <None Include="Include\mysql\psi\mysql_table.h">
+            <BuildOrder>73</BuildOrder>
+        </None>
+        <None Include="Include\mysql\psi\mysql_thread.h">
+            <BuildOrder>72</BuildOrder>
+        </None>
+        <None Include="Include\mysql\psi\psi.h">
+            <BuildOrder>71</BuildOrder>
+        </None>
+        <None Include="Include\mysql\services.h">
+            <BuildOrder>50</BuildOrder>
+        </None>
+        <None Include="Include\mysql\service_mysql_string.h">
+            <BuildOrder>54</BuildOrder>
+        </None>
+        <None Include="Include\mysql\service_my_plugin_log.h">
+            <BuildOrder>56</BuildOrder>
+        </None>
+        <None Include="Include\mysql\service_my_snprintf.h">
+            <BuildOrder>55</BuildOrder>
+        </None>
+        <None Include="Include\mysql\service_thd_alloc.h">
+            <BuildOrder>53</BuildOrder>
+        </None>
+        <None Include="Include\mysql\service_thd_wait.h">
+            <BuildOrder>52</BuildOrder>
+        </None>
+        <None Include="Include\mysql\service_thread_scheduler.h">
+            <BuildOrder>51</BuildOrder>
+        </None>
+        <None Include="Include\mysql\thread_pool_priv.h">
+            <BuildOrder>49</BuildOrder>
+        </None>
+        <None Include="Include\mysql_com.h">
+            <BuildOrder>23</BuildOrder>
+        </None>
+        <None Include="Include\mysql_com_server.h">
+            <BuildOrder>22</BuildOrder>
+        </None>
+        <None Include="Include\mysql_embed.h">
+            <BuildOrder>21</BuildOrder>
+        </None>
+        <None Include="Include\mysql_time.h">
+            <BuildOrder>20</BuildOrder>
+        </None>
+        <None Include="Include\mysql_version.h">
+            <BuildOrder>19</BuildOrder>
+        </None>
+        <None Include="Include\my_alloc.h">
+            <BuildOrder>38</BuildOrder>
+        </None>
+        <None Include="Include\my_attribute.h">
+            <BuildOrder>37</BuildOrder>
+        </None>
+        <None Include="Include\my_byteorder.h">
+            <BuildOrder>36</BuildOrder>
+        </None>
+        <None Include="Include\my_compiler.h">
+            <BuildOrder>35</BuildOrder>
+        </None>
+        <None Include="Include\my_config.h">
+            <BuildOrder>34</BuildOrder>
+        </None>
+        <None Include="Include\my_dbug.h">
+            <BuildOrder>33</BuildOrder>
+        </None>
+        <None Include="Include\my_dir.h">
+            <BuildOrder>32</BuildOrder>
+        </None>
+        <None Include="Include\my_getopt.h">
+            <BuildOrder>31</BuildOrder>
+        </None>
+        <None Include="Include\my_global.h">
+            <BuildOrder>30</BuildOrder>
+        </None>
+        <None Include="Include\my_list.h">
+            <BuildOrder>29</BuildOrder>
+        </None>
+        <None Include="Include\my_net.h">
+            <BuildOrder>28</BuildOrder>
+        </None>
+        <None Include="Include\my_pthread.h">
+            <BuildOrder>27</BuildOrder>
+        </None>
+        <None Include="Include\my_sys.h">
+            <BuildOrder>26</BuildOrder>
+        </None>
+        <None Include="Include\my_xml.h">
+            <BuildOrder>25</BuildOrder>
+        </None>
+        <None Include="Include\m_ctype.h">
+            <BuildOrder>40</BuildOrder>
+        </None>
+        <None Include="Include\m_string.h">
+            <BuildOrder>39</BuildOrder>
+        </None>
+        <None Include="Include\plugin.h">
+            <BuildOrder>16</BuildOrder>
+        </None>
+        <None Include="Include\plugin_audit.h">
+            <BuildOrder>15</BuildOrder>
+        </None>
+        <None Include="Include\plugin_ftparser.h">
+            <BuildOrder>14</BuildOrder>
+        </None>
+        <None Include="Include\plugin_validate_password.h">
+            <BuildOrder>13</BuildOrder>
+        </None>
+        <None Include="Include\sql_common.h">
+            <BuildOrder>12</BuildOrder>
+        </None>
+        <None Include="Include\sql_state.h">
+            <BuildOrder>11</BuildOrder>
+        </None>
+        <None Include="Include\sslopt-case.h">
+            <BuildOrder>10</BuildOrder>
+        </None>
+        <None Include="Include\sslopt-longopts.h">
+            <BuildOrder>9</BuildOrder>
+        </None>
+        <None Include="Include\sslopt-vars.h">
+            <BuildOrder>8</BuildOrder>
+        </None>
+        <None Include="Include\typelib.h">
+            <BuildOrder>7</BuildOrder>
+        </None>
         <CppCompile Include="K8055.cpp">
             <DependentOn>K8055.h</DependentOn>
             <BuildOrder>3</BuildOrder>
@@ -170,18 +382,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin64\cc64220mt.dll" Class="DependencyModule">
-                    <Platform Name="Win64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32220mt.dll" Class="DependencyModule">
                     <Platform Name="Win32">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin64\cc64220.dll" Class="DependencyModule">
-                    <Platform Name="Win64">
+                <DeployFile LocalName="Include\mysql\client_plugin.h.pp" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -195,6 +403,28 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName=".\Win32\Debug\Project1.tds" Configuration="Debug" Class="DebugSymbols">
+                    <Platform Name="Win32">
+                        <RemoteName>Project1.tds</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin64\cc64220mt.dll" Class="DependencyModule">
+                    <Platform Name="Win64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin64\cc64220.dll" Class="DependencyModule">
+                    <Platform Name="Win64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Include\libmysql.lib" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx32\libcgstl.dylib" Class="DependencyModule">
                     <Platform Name="OSX32">
                         <Overwrite>true</Overwrite>
@@ -205,9 +435,15 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName=".\Win32\Debug\Project1.tds" Configuration="Debug" Class="DebugSymbols">
+                <DeployFile LocalName="Include\mysql\plugin_ftparser.h.pp" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
-                        <RemoteName>Project1.tds</RemoteName>
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Include\mysql\plugin_auth.h.pp" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -220,6 +456,12 @@
                 <DeployFile LocalName=".\Win32\Debug\Project1.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>Project1.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Include\mysql\plugin_audit.h.pp" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -599,13 +841,13 @@
                         <Operation>1</Operation>
                     </Platform>
                 </DeployClass>
-                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
-                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
             </Deployment>
             <Platforms>
                 <Platform value="Win32">True</Platform>
